@@ -1,0 +1,727 @@
+/* ==========================================================================
+   AOT .NET Core Landing Page Custom Stylesheet
+   Matching Design Standards: Celonis & Oracle EBS AOT Pages
+   ========================================================================== */
+
+/* 1. Theme Variables & Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --aot-red: #DE2931;
+    --aot-red-hover: #b91c1c;
+    --aot-red-light: #fef2f2;
+    --aot-dark: #212529;
+    --aot-dark-alt: #0f172a;
+    --aot-dark-card: #232f45;
+    --aot-gray: #4b5563;
+    --aot-light-gray: #f8f8f8;
+    --aot-border-color: #e5e7eb;
+    
+    --font-primary: 'Plus Jakarta Sans', sans-serif;
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* 2. Global Resets & Typography */
+body {
+    font-family: var(--font-primary);
+    color: var(--aot-dark);
+    background-color: #ffffff;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--font-heading);
+    font-weight: 700 !important;
+    color: var(--aot-dark);
+}
+
+.text-aot-red {
+    color: var(--aot-red) !important;
+}
+
+.bg-aot-red {
+    background-color: var(--aot-red) !important;
+}
+
+.bg-aot-light-gray {
+    background-color: var(--aot-light-gray) !important;
+}
+
+.bg-aot-dark {
+    background-color: var(--aot-dark-alt) !important;
+}
+
+/* 3. Navigation Bar Styling */
+.aot-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    padding: 15px 0;
+}
+
+.aot-navbar .navbar-brand img {
+    height: 45px;
+    width: auto;
+}
+
+.aot-navbar .nav-link {
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--aot-dark);
+    text-transform: uppercase;
+    padding: 8px 16px !important;
+    transition: color 0.2s ease;
+}
+
+.aot-navbar .nav-link:hover, 
+.aot-navbar .nav-link.active {
+    color: var(--aot-red) !important;
+}
+
+.btn-aot-outline {
+    border: 2px solid var(--aot-red);
+    color: var(--aot-red);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-aot-outline:hover {
+    background-color: var(--aot-red);
+    color: #ffffff;
+}
+
+.btn-aot-solid {
+    background-color: var(--aot-red);
+    border: 2px solid var(--aot-red);
+    color: #ffffff;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-aot-solid:hover {
+    background-color: var(--aot-red-hover);
+    border-color: var(--aot-red-hover);
+    color: #ffffff;
+}
+
+/* 4. Hero Section */
+.hero-section {
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 45%, rgba(15, 23, 42, 0.6) 100%), url('../images/hero_img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 140px 0 120px 0;
+    position: relative;
+    color: #ffffff;
+}
+
+.hero-title {
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+.hero-section .btn-aot-outline {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.hero-section .btn-aot-outline:hover {
+    background-color: #ffffff;
+    color: var(--aot-dark);
+    border-color: #ffffff;
+}
+
+/* Stats Badges */
+.stat-box {
+    border-left: 4px solid var(--aot-red);
+    padding: 5px 15px;
+    margin-right: 30px;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: var(--aot-red);
+    line-height: 1;
+}
+
+.hero-section .stat-number {
+    color: #ff4d4d;
+}
+
+.stat-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--aot-gray);
+}
+
+.hero-section .stat-label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 5. Generic Section Header */
+.section-header {
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 38px;
+    position: relative;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.section-header p {
+    color: var(--aot-gray);
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* 6. Why Choose Us / Cards Grid */
+.feature-card {
+    background: #ffffff;
+    border: 1px solid var(--aot-border-color);
+    border-radius: 8px;
+    padding: 35px 30px;
+    height: 100%;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--aot-red);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+}
+
+.feature-card:hover::before {
+    transform: scaleX(1);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--aot-red-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--aot-red);
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    background-color: var(--aot-red);
+    color: #ffffff;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: var(--aot-gray);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* 7. Services Section Cards (Premium Styling) */
+.service-card {
+    background: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 12px;
+    padding: 45px 35px;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.015);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--aot-red);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(222, 41, 49, 0.055);
+    border-color: rgba(222, 41, 49, 0.08);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgba(222, 41, 49, 0.25);
+    background-color: rgba(222, 41, 49, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--aot-red);
+    margin-bottom: 25px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover .service-card-icon {
+    background-color: var(--aot-red);
+    color: #ffffff;
+    border-color: var(--aot-red);
+    box-shadow: 0 6px 15px rgba(222, 41, 49, 0.25);
+}
+
+.service-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--aot-dark);
+}
+
+.service-card p {
+    color: var(--aot-gray);
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.service-item-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.service-item-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: var(--aot-gray);
+    line-height: 1.5;
+}
+
+.service-item-list li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--aot-red);
+    font-size: 14px;
+}
+
+.unified-dashboard-cta {
+    background: linear-gradient(135deg, var(--aot-dark-card) 0%, var(--aot-dark-alt) 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    position: relative;
+}
+
+.unified-dashboard-cta img {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 8. Tech / Why .NET Core Section */
+.why-dotnet-section {
+    padding: 80px 0;
+}
+
+.check-item {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--aot-border-color);
+    display: flex;
+    align-items: flex-start;
+}
+
+.check-icon-box {
+    color: var(--aot-red);
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+.check-content h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.check-content p {
+    color: var(--aot-gray);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* 9. Process Step Timeline */
+.process-step {
+    text-align: center;
+    position: relative;
+}
+
+.process-step-num {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid var(--aot-red);
+    color: var(--aot-red);
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(222, 41, 49, 0.1);
+}
+
+.process-step:hover .process-step-num {
+    background-color: var(--aot-red);
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.process-step h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.process-step p {
+    color: var(--aot-gray);
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+/* Connector lines between steps for desktop only */
+@media (min-width: 992px) {
+    .process-step::after {
+        content: '';
+        position: absolute;
+        top: 35px;
+        left: calc(50% + 45px);
+        width: calc(100% - 90px);
+        height: 2px;
+        background-color: var(--aot-border-color);
+        z-index: -1;
+    }
+    .col-lg-2.process-step:last-child::after {
+        display: none;
+    }
+}
+
+/* 10. Partner & Guarantee Section (Premium Dark Theme) */
+.partner-section {
+    background-color: var(--aot-dark-alt); /* Slate-900: #0f172a */
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background grid glow effect */
+.partner-section::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(222, 41, 49, 0.04) 0%, rgba(222, 41, 49, 0) 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.partner-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.guarantee-card-premium {
+    background-color: var(--aot-dark-card); /* Slate-800: #232f45 */
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guarantee-card-premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--aot-red);
+}
+
+.guarantee-card-premium:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(222, 41, 49, 0.08);
+}
+
+.guarantee-icon-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(222, 41, 49, 0.1);
+    color: var(--aot-red);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.guarantee-card-premium .badge-number {
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    font-family: var(--font-heading);
+    margin-bottom: 8px;
+}
+
+.guarantee-card-premium .badge-number span {
+    color: var(--aot-red);
+}
+
+.guarantee-card-premium .badge-text {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 1px;
+}
+
+/* 11. Contact Form & Info */
+.contact-form-card {
+    background: #ffffff;
+    border: 1px solid var(--aot-border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.form-control, .form-select {
+    padding: 12px 18px;
+    border: 1px solid var(--aot-border-color);
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--aot-red);
+    box-shadow: 0 0 0 3px rgba(222, 41, 49, 0.15);
+    color: var(--aot-dark);
+}
+
+.contact-info-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-info-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-info-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--aot-red-light);
+    color: var(--aot-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.contact-info-text h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.contact-info-text p {
+    color: var(--aot-gray);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.next-step-box {
+    background-color: var(--aot-light-gray);
+    border-radius: 6px;
+    padding: 25px;
+    border-left: 4px solid var(--aot-red);
+}
+
+/* 12. Footer */
+.footer {
+    background-color: var(--aot-dark-alt);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 80px 0 30px 0;
+    font-size: 14px;
+}
+
+.footer h4 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--aot-red);
+}
+
+.footer-social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-social-icon:hover {
+    background-color: var(--aot-red);
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 60px;
+    padding-top: 30px;
+}
+
+/* 13. Responsive Breakpoints */
+@media (max-width: 991.98px) {
+    .hero-title {
+        font-size: 38px;
+    }
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+    .hero-subtitle {
+        margin: 0 auto 30px auto;
+    }
+    .hero-stats {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .services-nav {
+        flex-wrap: wrap;
+    }
+    .services-nav .nav-link {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .section-header h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 30px;
+    }
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stat-box {
+        margin-right: 0;
+        margin-bottom: 20px;
+        border-left: none;
+        border-bottom: 2px solid var(--aot-red);
+        padding-bottom: 10px;
+    }
+    .contact-form-card {
+        padding: 25px;
+    }
+}
