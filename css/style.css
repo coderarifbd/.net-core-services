@@ -793,21 +793,32 @@ section {
         min-width: 150px;
     }
 
-    /* Stats: 2-column grid on mobile */
+    /* Stats: 3-column horizontal row on mobile */
     .hero-stats {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-        justify-items: center;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: stretch;
+        gap: 0;
+        margin-top: 28px;
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 10px;
+        overflow: hidden;
     }
     .stat-box {
-        border-left: 4px solid var(--aot-red);
-        border-bottom: none;
-        padding: 6px 15px;
+        flex: 1;
+        text-align: center;
+        padding: 14px 8px;
         margin: 0;
-        width: 100%;
+        border-left: none;
+        border-bottom: none;
+        border-right: 1px solid rgba(255,255,255,0.12);
     }
-    .stat-number { font-size: 26px; }
+    .stat-box:last-child {
+        border-right: none;
+    }
+    .stat-number { font-size: 22px; }
+    .stat-label  { font-size: 10px; letter-spacing: 0.5px; }
 
     /* Section headers */
     .section-header h2 { font-size: 24px; }
@@ -866,10 +877,10 @@ section {
         padding: 10px 16px;
     }
 
-    /* Stats: keep 2-column but tighter */
-    .stat-box { padding: 5px 10px; }
-    .stat-number { font-size: 22px; }
-    .stat-label { font-size: 11px; }
+    /* Stats: keep 3-col row, just tighter sizing */
+    .stat-box { padding: 12px 5px; }
+    .stat-number { font-size: 18px; }
+    .stat-label  { font-size: 9px; letter-spacing: 0.3px; }
 
     /* Section headers */
     .section-header { margin-bottom: 25px; }
