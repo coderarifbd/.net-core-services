@@ -202,66 +202,53 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* 6. Why Choose Us / Cards Grid */
 .feature-card {
     background: #ffffff;
-    border: 1px solid var(--aot-border-color);
-    border-radius: 8px;
-    padding: 35px 30px;
+    border: 1px solid rgba(222, 41, 49, 0.12); /* Soft red/pink border */
+    border-radius: 16px;
+    padding: 40px 35px;
     height: 100%;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
-    overflow: hidden;
-}
-
-.feature-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: var(--aot-red);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.015);
 }
 
 .feature-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-    border-color: transparent;
-}
-
-.feature-card:hover::before {
-    transform: scaleX(1);
+    transform: translateY(-6px);
+    border-color: rgba(222, 41, 49, 0.35);
+    box-shadow: 0 15px 40px rgba(222, 41, 49, 0.05);
 }
 
 .feature-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: var(--aot-red-light);
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: rgba(222, 41, 49, 0.08); /* Soft red background */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--aot-red);
     margin-bottom: 25px;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .feature-card:hover .feature-icon {
     background-color: var(--aot-red);
     color: #ffffff;
+    box-shadow: 0 6px 15px rgba(222, 41, 49, 0.2);
 }
 
 .feature-card h3 {
     font-size: 20px;
+    font-weight: 700;
     margin-bottom: 15px;
+    color: var(--aot-dark);
 }
 
 .feature-card p {
     color: var(--aot-gray);
     font-size: 14px;
     margin-bottom: 0;
+    line-height: 1.6;
 }
 
 /* 7. Services Section Cards (Premium Styling) */
@@ -380,31 +367,55 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .check-item {
     background-color: #ffffff;
-    border-radius: 6px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
-    border: 1px solid var(--aot-border-color);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(222, 41, 49, 0.12); /* Soft red/pink border */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.015);
     display: flex;
     align-items: flex-start;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.check-item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(222, 41, 49, 0.35);
+    box-shadow: 0 15px 35px rgba(222, 41, 49, 0.04);
 }
 
 .check-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: rgba(222, 41, 49, 0.08); /* Soft red background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
     color: var(--aot-red);
-    font-size: 20px;
-    margin-right: 15px;
+    margin-right: 18px;
     margin-top: 2px;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.check-item:hover .check-icon-box {
+    background-color: var(--aot-red);
+    color: #ffffff;
 }
 
 .check-content h4 {
     font-size: 18px;
-    margin-bottom: 5px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--aot-dark);
 }
 
 .check-content p {
     color: var(--aot-gray);
     font-size: 14px;
     margin-bottom: 0;
+    line-height: 1.6;
 }
 
 /* 9. Process Step Timeline */
