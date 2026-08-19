@@ -22,11 +22,17 @@
 }
 
 /* 2. Global Resets & Typography */
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body {
     font-family: var(--font-primary);
     color: var(--aot-dark);
     background-color: #ffffff;
     overflow-x: hidden;
+    max-width: 100%;
     line-height: 1.6;
 }
 
@@ -197,6 +203,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-size: 16px;
     max-width: 700px;
     margin: 0 auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /* 6. Why Choose Us / Cards Grid */
@@ -694,10 +702,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 section {
     padding-top: clamp(40px, 6vw, 90px);
     padding-bottom: clamp(40px, 6vw, 90px);
+    overflow-x: clip;  /* clips overflow without creating scroll context */
 }
 
 /* ── Tablet (≤ 991px) ─────────────────────────────────── */
 @media (max-width: 991.98px) {
+
+    /* Hard overflow lock on all sections and rows */
+    section, .container, .container-fluid {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    img, video, iframe, table {
+        max-width: 100% !important;
+    }
 
     /* Navbar */
     .aot-navbar .navbar-collapse {
@@ -831,32 +849,46 @@ section {
     /* Tighter gap between stacked check-item cards */
     .why-dotnet-section .row.g-4 { --bs-gutter-y: 12px; }
 
-    /* Process steps — compact horizontal card on mobile */
-    .process-section .row.g-4 { --bs-gutter-y: 12px; --bs-gutter-x: 12px; }
+    /* Process steps — CSS Grid with real gap */
+    .process-section .row.g-4 {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 0 !important;
+        align-items: start;   /* cards size to own content — no stretching */
+    }
+    .process-section .row.g-4 > [class*="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+        padding: 0 !important;
+    }
     .process-step {
         text-align: left;
         display: flex;
-        align-items: flex-start;
+        align-items: center;   /* vertically center number with title */
         gap: 12px;
         background: #fff;
         border: 1px solid rgba(222,41,49,0.12);
-        border-radius: 12px;
-        padding: 14px 12px;
+        border-radius: 10px;
+        padding: 12px 10px;    /* equal, tight padding on all sides */
         margin-bottom: 0;
+        /* no height:100% — card wraps its own content only */
     }
     .process-step-num {
-        width: 40px;
-        height: 40px;
-        min-width: 40px;
-        min-height: 40px;
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+        min-height: 38px;
         flex-shrink: 0;
         aspect-ratio: 1 / 1;
-        font-size: 15px;
+        font-size: 14px;
         margin: 0;
         border-radius: 50%;
     }
-    .process-step h4 { font-size: 13px; margin-bottom: 3px; }
-    .process-step p  { font-size: 11px; padding: 0; margin: 0; line-height: 1.5; }
+    .process-step-text { flex: 1; min-width: 0; }
+    .process-step h4 { font-size: 12px; margin-bottom: 2px; line-height: 1.3; }
+    .process-step p  { font-size: 10.5px; padding: 0; margin: 0; line-height: 1.45; color: var(--aot-gray); }
 
     /* Partner section */
     .partner-section h2 { font-size: 26px; }
