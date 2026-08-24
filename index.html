@@ -1,831 +1,729 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.NET Core Development, Support & Outsourcing Services - AOT</title>
-
-    <!-- Meta tags for SEO & Social Sharing -->
-    <meta name="description"
-        content="Empower your business with robust, scalable, and secure .NET Core solutions. Certified developers, flexible outsourcing, and 24/7 support. Get a free consultation today.">
-    <meta property="og:title" content=".NET Core Development, Support & Outsourcing Services - AOT">
-    <meta property="og:description"
-        content="Empower your business with robust, scalable, and secure .NET Core solutions. Certified developers, flexible outsourcing, and 24/7 support.">
-    <meta property="og:image" content="images/hero_image.jpg">
-
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <!-- FontAwesome 6 for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Custom Style Sheet -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>.NET Core Development, Support & Outsourcing Services | AOT</title>
+  <meta name="description" content="Empowering your business with robust .NET Core solutions. Comprehensive .NET Core development, maintenance, and outsourcing services by AOT.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content=".NET Core Development, Support & Outsourcing Services | AOT">
+  <meta property="og:description" content="Empowering your business with robust .NET Core solutions. Comprehensive .NET Core development, maintenance, and outsourcing services.">
+  <meta property="og:url" content="https://www.aot.sa/dotnet-core-services/">
+  <meta property="og:site_name" content="AOT - Advanced Operations Technology">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- 1. Header & Navigation -->
-    <nav class="navbar navbar-expand-lg aot-navbar sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/nayifat_logo.png" alt="AOT Logo">
+  <!-- Sticky Navigation Header (Glassmorphic Dark on Scroll) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#" class="logo-link" aria-label="AOT Home">
+        <img src="images/nayifat_logo.png" alt="AOT Logo" class="header-logo">
+      </a>
+      
+      <!-- Mobile Nav Trigger -->
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#why-us" class="nav-link">Why Choose Us</a>
+        <a href="#services" class="nav-link">Our Services</a>
+        <a href="#why-dotnet" class="nav-link">Why .NET Core</a>
+        <a href="#blogs" class="nav-link">Blog</a>
+        <a href="#partner" class="nav-link">Partnership</a>
+        <a href="#contact" class="nav-cta-btn">Free Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Left-Aligned Dark Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-container-left">
+          <!-- Left-Aligned Badge Capsules -->
+          <div class="badge-wrapper">
+            <div class="badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              .NET Core Enterprise Solutions
+            </div>
+            <div class="badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              Development &amp; Outsourcing
+            </div>
+          </div>
+
+          <!-- H1 Left-Aligned Headline -->
+          <h1 class="hero-title">.NET Core Development, <span class="highlight-red">Support &amp; Outsourcing</span> Services</h1>
+          
+          <!-- Left-Aligned Subtext from PDF -->
+          <p class="hero-description">
+            At Advanced Operations Technology (AOT), we deliver comprehensive .NET Core development, maintenance, and outsourcing services to help your organization build scalable, secure, and high-performance applications. Whether you need custom development, ongoing support, or dedicated outsourcing teams, we have the expertise to accelerate your digital transformation.
+          </p>
+
+          <!-- Left-Aligned Dual Action CTAs -->
+          <div class="hero-ctas">
+            <a href="#contact" class="btn-primary">
+              Free Consultation
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#aotNavbarContent"
-                aria-controls="aotNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a href="#services" class="btn-secondary">Explore Services</a>
+          </div>
+        </div>
+
+        <!-- Overlapping Stats Panel -->
+        <div class="stats-panel">
+          <div class="stat-item">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Cross-Platform Ready</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">24/7</div>
+            <div class="stat-label">Support &amp; Maintenance</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">Certified</div>
+            <div class="stat-label">Enterprise Developers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. Why Choose Us Section from PDF -->
+    <section id="why-us" class="why-section">
+      <div class="container">
+
+        <div class="why-heading">
+          <span class="section-label">WHY AOT</span>
+          <h2>
+            Why Choose Us for
+            <span class="highlight-red">.NET Core Services</span>?
+          </h2>
+          <p class="why-subtitle">
+            Our certified developers, agile methodology, and end-to-end support transform your software operations into distinct competitive advantages.
+          </p>
+        </div>
+
+        <div class="why-layout">
+          <!-- LEFT IMAGE & BADGE -->
+          <div class="why-visual">
+            <div class="why-image-wrapper">
+              <img
+                src="images/custom_solution.png"
+                alt="AOT .NET Core Software Engineering Dashboard"
+                class="why-image"
+              >
+              <div class="why-image-overlay"></div>
+
+              <!-- Floating badge -->
+              <div class="why-experience-card">
+                <div class="experience-icon">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Enterprise Ready</strong>
+                  <span>Certified &bull; Scalable &bull; Trusted</span>
+                </div>
+              </div>
+
+              <!-- Bottom caption -->
+              <div class="why-image-caption">
+                <span class="caption-dot"></span>
+                <div>
+                  <strong>Expert .NET Engineering</strong>
+                  <p>
+                    Custom web apps, APIs, microservices, and dedicated teams.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT 6 FEATURES FROM PDF -->
+          <div class="why-features">
+            <div class="why-feature-card">
+              <div class="why-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="why-feature-content">
+                <h3>Experienced Professionals</h3>
+                <p>
+                  Certified developers with deep knowledge of .NET Core and modern development practices.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-feature-card">
+              <div class="why-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+              </div>
+              <div class="why-feature-content">
+                <h3>Flexible Engagement Models</h3>
+                <p>
+                  Choose from full-project development, dedicated teams, or support retainer models.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-feature-card">
+              <div class="why-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              </div>
+              <div class="why-feature-content">
+                <h3>Agile Methodology</h3>
+                <p>
+                  Rapid delivery cycles with continuous feedback for optimal results.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-feature-card">
+              <div class="why-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div class="why-feature-content">
+                <h3>Cost-Efficient Solutions</h3>
+                <p>
+                  Reduce overheads by outsourcing your development needs to trusted specialists.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-feature-card">
+              <div class="why-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+              <div class="why-feature-content">
+                <h3>End-to-End Support</h3>
+                <p>
+                  From architecture design to deployment, maintenance, and ongoing updates.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-feature-card">
+              <div class="why-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="why-feature-content">
+                <h3>Quality &amp; Security</h3>
+                <p>
+                  Adherence to best practices, coding standards, and compliance requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Our Services Section from PDF (3 Comprehensive Categories) -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="services-heading">
+          <span class="section-label">WHAT WE OFFER</span>
+          <h2>Our <span class="highlight-red">Services</span></h2>
+          <p class="services-subtitle">
+            Comprehensive .NET Core development, maintenance, and outsourcing capabilities tailored to your enterprise goals.
+          </p>
+        </div>
+        
+        <div class="services-grid-3col">
+          <!-- Service 1: .NET Core Development Services -->
+          <div class="service-card-premium">
+            <div class="service-card-header">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3>.NET Core Development Services</h3>
+            </div>
+            <ul class="service-list">
+              <li><strong>Custom Web &amp; Microservice Applications:</strong> Build scalable, high-performance web apps and microservices tailored to your needs.</li>
+              <li><strong>API &amp; Backend Development:</strong> Create secure RESTful APIs for mobile apps, frontend interfaces, or third-party integrations.</li>
+              <li><strong>Cloud-Native Solutions:</strong> Deploy on Azure, AWS, or GCP, optimized for cloud environments.</li>
+              <li><strong>Legacy System Migration:</strong> Migrate existing applications to .NET Core for improved performance and flexibility.</li>
+              <li><strong>Third-Party Integrations:</strong> Connect your systems with ERP, CRM, payment gateways, and other enterprise solutions.</li>
+            </ul>
+          </div>
+
+          <!-- Service 2: Support & Maintenance Services -->
+          <div class="service-card-premium">
+            <div class="service-card-header">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h3>Support &amp; Maintenance Services</h3>
+            </div>
+            <ul class="service-list">
+              <li><strong>Application Monitoring &amp; Optimization:</strong> Continuous performance and security assessments.</li>
+              <li><strong>Bug Fixes &amp; Enhancements:</strong> Regular updates to keep your applications current and reliable.</li>
+              <li><strong>Security &amp; Compliance:</strong> Implement patches and best practices to ensure data safety and regulatory adherence.</li>
+              <li><strong>Technical Support:</strong> 24/7 support services to minimize downtime and resolve critical issues.</li>
+              <li><strong>Code Review &amp; Refactoring:</strong> Enhance code quality for long-term maintainability.</li>
+            </ul>
+          </div>
+
+          <!-- Service 3: .NET Core Outsourcing Services -->
+          <div class="service-card-premium">
+            <div class="service-card-header">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3>.NET Core Outsourcing Services</h3>
+            </div>
+            <ul class="service-list">
+              <li><strong>Dedicated Development Teams:</strong> Assemble specialized teams ready to work on your projects on a flexible basis.</li>
+              <li><strong>Managed Projects:</strong> Full-cycle project management with transparent processes.</li>
+              <li><strong>Offshore Development:</strong> Cost-effective solutions with high-quality deliverables.</li>
+              <li><strong>Rapid Scaling:</strong> Quickly scale your development capacity based on project needs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Why Choose .NET Core? Section from PDF (Executive Split Showcase) -->
+    <section class="benefits-section" id="why-dotnet">
+      <div class="container">
+        <div class="benefits-heading">
+          <span class="section-label">KEY ADVANTAGES</span>
+          <h2>
+            Why Choose <span class="highlight-red">.NET Core</span>?
+          </h2>
+          <p class="benefits-subtitle">
+            Designed by Microsoft as an open-source, highly modular framework, it serves as the ultimate engine for modern enterprise applications.
+          </p>
+        </div>
+
+        <div class="benefits-showcase">
+          <!-- Left: Highlight Featured Panel -->
+          <div class="benefits-feature-panel">
+            <div class="feature-panel-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              MICROSOFT ECOSYSTEM
+            </div>
+            <h3 class="feature-panel-title">High-Performance Modern Enterprise Framework</h3>
+            <p class="feature-panel-desc">
+              Leverage our expert team to build modular, cross-platform applications optimized for cloud elasticity, top-tier benchmarks, and robust enterprise integrations.
+            </p>
+            
+            <div class="feature-panel-metrics">
+              <div class="panel-metric-item">
+                <span class="panel-metric-val">100%</span>
+                <span class="panel-metric-lbl">Cross-Platform</span>
+              </div>
+              <div class="panel-metric-item">
+                <span class="panel-metric-val">Open</span>
+                <span class="panel-metric-lbl">Source &amp; Modular</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn-primary feature-panel-cta">
+              Schedule Free Consultation
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <!-- Right: 5 Benefit Items from PDF -->
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <div class="benefit-item-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div class="benefit-item-content">
+                <h4>Open-Source &amp; Cross-Platform</h4>
+                <p>Open-source, cross-platform framework suitable for diverse environments.</p>
+              </div>
+              <span class="benefit-item-num">01</span>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-item-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="benefit-item-content">
+                <h4>High Performance &amp; Scalability</h4>
+                <p>High performance and scalability at enterprise levels.</p>
+              </div>
+              <span class="benefit-item-num">02</span>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-item-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+              <div class="benefit-item-content">
+                <h4>Modular Architecture</h4>
+                <p>Modular architecture supports flexible development.</p>
+              </div>
+              <span class="benefit-item-num">03</span>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-item-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </div>
+              <div class="benefit-item-content">
+                <h4>Seamless Cloud Integration</h4>
+                <p>Seamless integration with cloud platforms and third-party services.</p>
+              </div>
+              <span class="benefit-item-num">04</span>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-item-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <div class="benefit-item-content">
+                <h4>Active Community Support</h4>
+                <p>Active community support and continuous updates.</p>
+              </div>
+              <span class="benefit-item-num">05</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Blogs & Resources Section (Positioned After Why Choose .NET Core) -->
+    <section class="blogs-section" id="blogs">
+      <div class="container">
+        <div class="blogs-heading">
+          <span class="section-label">LATEST INSIGHTS &amp; ARTICLES</span>
+          <h2>
+            Explore Our <span class="highlight-red">.NET Core Knowledge Base</span>
+          </h2>
+          <p class="blogs-subtitle">
+            Stay ahead with expert perspectives on .NET 8/9 architecture, enterprise cloud migration, high-throughput microservices, and agile outsourcing.
+          </p>
+        </div>
+
+        <div class="grid-3col">
+          <!-- Blog Card 1 -->
+          <article class="blog-card">
+            <div class="blog-image-box">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Dark server architecture with glowing blue network connections" class="blog-img" loading="lazy">
+              <span class="blog-badge">ARCHITECTURE</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta-line">
+                <span class="meta-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Oct 12, 2026
+                </span>
+                <span class="meta-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  7 min read
+                </span>
+              </div>
+              <h3 class="blog-title">Building Resilient Microservice Architectures with ASP.NET Core</h3>
+              <p class="blog-desc">
+                A comprehensive guide to implementing modular, containerized microservices across your enterprise using modern C# design patterns and cloud telemetry.
+              </p>
+              <div class="blog-divider"></div>
+              <a href="#contact" class="blog-read-link">
+                Read Full Article &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article class="blog-card">
+            <div class="blog-image-box">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Laptop screen displaying software code and performance metrics" class="blog-img" loading="lazy">
+              <span class="blog-badge">PERFORMANCE</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta-line">
+                <span class="meta-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Sep 28, 2026
+                </span>
+                <span class="meta-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  5 min read
+                </span>
+              </div>
+              <h3 class="blog-title">Maximizing Throughput: High-Performance C# &amp; ASP.NET Core Tuning</h3>
+              <p class="blog-desc">
+                How our architects achieve sub-millisecond latency using memory pooling, Span&lt;T&gt;, async pipelines, and EF Core query execution optimizations.
+              </p>
+              <div class="blog-divider"></div>
+              <a href="#contact" class="blog-read-link">
+                Read Full Article &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="blog-card">
+            <div class="blog-image-box">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Software engineering team collaborating in modern office" class="blog-img" loading="lazy">
+              <span class="blog-badge">OUTSOURCING</span>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta-line">
+                <span class="meta-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Aug 19, 2026
+                </span>
+                <span class="meta-item">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  6 min read
+                </span>
+              </div>
+              <h3 class="blog-title">Scaling Engineering Velocity with Dedicated .NET Outsourcing Pods</h3>
+              <p class="blog-desc">
+                Strategic practices for integrating certified .NET engineers into your agile sprints with transparent governance and SLA-backed deliverables.
+              </p>
+              <div class="blog-divider"></div>
+              <a href="#contact" class="blog-read-link">
+                Read Full Article &rarr;
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="blogs-action-wrapper">
+          <a href="https://www.aot.sa/insights/" class="blog-explore-btn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="action-icon"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Explore All .NET Resources
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Partner with AOT Section from PDF (Split Layout) -->
+    <section class="impact-section" id="partner">
+      <div class="container split-layout">
+        <!-- LEFT: HEADING + LEAD TEXT + ILLUSTRATION -->
+        <div class="split-left">
+          <h2>Partner with <span class="highlight-red">AOT</span></h2>
+          <p class="partnership-lead">
+            Leverage our expert team to develop resilient, modern, and future-proof .NET Core applications. Whether you’re building from scratch, maintaining existing solutions, or outsourcing development, we're committed to delivering excellence and driving your success.
+          </p>
+          <div class="partnership-graphic-wrapper">
+            <img src="images/custom_solution.png" alt="AOT .NET Core software engineering partnership" class="partnership-img">
+          </div>
+        </div>
+
+        <!-- RIGHT: CHECKPOINT LIST FROM PDF -->
+        <div class="split-right">
+          <ul class="outcome-list">
+            <li class="outcome-item">
+              <div class="outcome-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="outcome-text">Develop resilient, modern, and future-proof .NET Core applications.</span>
+            </li>
+
+            <li class="outcome-item">
+              <div class="outcome-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="outcome-text">Custom development, ongoing support, and dedicated outsourcing teams.</span>
+            </li>
+
+            <li class="outcome-item">
+              <div class="outcome-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="outcome-text">Transparent agile delivery cycles with high-quality deliverables.</span>
+            </li>
+
+            <li class="outcome-item">
+              <div class="outcome-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="outcome-text">24/7 technical support to minimize downtime and resolve critical issues.</span>
+            </li>
+
+            <li class="outcome-item">
+              <div class="outcome-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="outcome-text">Adherence to best practices, coding standards, and compliance requirements.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Intermediate CTA Banner -->
+    <section class="banner-cta-section">
+      <div class="container banner-cta-container">
+        <h2 class="banner-cta-title">Ready to Accelerate Your <span class="highlight-red">.NET Core Projects</span>?</h2>
+        <p class="banner-cta-desc">
+          Contact us today for a free consultation! Our certified .NET specialists are ready to discuss your development, maintenance, or outsourcing needs.
+        </p>
+        <a href="#contact" class="btn-primary">
+          Get in Touch
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- 7. Get in Touch / Contact Section from PDF -->
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-card">
+          <!-- CTA Info -->
+          <div class="cta-info">
+            <h2>Get in <span class="highlight-red">Touch</span></h2>
+            <p>
+              Ready to accelerate your .NET Core projects? Contact us today for a free consultation!
+            </p>
+            <div class="cta-details">
+              <div class="cta-detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>Email: <a href="mailto:marketing@aot.sa">marketing@aot.sa</a></span>
+              </div>
+              <div class="cta-detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>Phone: <a href="tel:+966112910605">+966 11 291 0605</a></span>
+              </div>
+              <div class="cta-detail-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Location: Riyadh, Kingdom of Saudi Arabia</span>
+              </div>
+            </div>
+
+            <!-- What happens next timeline card -->
+            <div class="next-steps-card">
+              <h3 class="next-steps-title">What happens next?</h3>
+              <div class="next-steps-list">
+                <div class="next-step-item">
+                  <span class="step-number">1</span>
+                  <span class="step-text">We'll review your inquiry within 4 hours</span>
+                </div>
+                <div class="next-step-item">
+                  <span class="step-number">2</span>
+                  <span class="step-text">Schedule a 30-minute discovery call</span>
+                </div>
+                <div class="next-step-item">
+                  <span class="step-number">3</span>
+                  <span class="step-text">Receive a customized .NET proposal and roadmap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="contactForm" aria-label="Request .NET Core Consultation Form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name <span class="required-asterisk">*</span></label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Work Email <span class="required-asterisk">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="name@company.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required-asterisk">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+966 50 000 0000" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="service">Service Focus</label>
+                <select id="service" name="service" class="form-control">
+                  <option value=".NET Core Development Services">.NET Core Development Services</option>
+                  <option value="Support &amp; Maintenance Services">Support &amp; Maintenance Services</option>
+                  <option value=".NET Core Outsourcing Services">.NET Core Outsourcing Services</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Describe your project, systems, timeline or developer requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit" id="submitBtn">
+              Submit Request
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             </button>
-            <div class="collapse navbar-collapse" id="aotNavbarContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#why-us">Why Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#why-dotnet">Why .NET</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#process">Process</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a class="btn btn-aot-outline" href="#contact">Get a Quote</a>
-                    </li>
-                </ul>
-            </div>
+          </form>
         </div>
-    </nav>
-
-    <!-- 2. Hero Section -->
-    <section class="hero-section" id="home">
-        <div class="container">
-            <div class="row">
-                <!-- Hero Text (Full background image underneath, text left-aligned) -->
-                <div class="col-lg-9 col-xl-8">
-                    <div class="text-uppercase text-aot-red fw-bold mb-2 font-heading"
-                        style="font-size: 14px; letter-spacing: 1.5px;">
-                        Empowering Your Business with Robust .NET Core Solutions
-                    </div>
-                    <h1 class="hero-title">
-                        .NET Core Development, <span class="text-aot-red">Support & Outsourcing</span> Services
-                    </h1>
-                    <p class="hero-subtitle">
-                        At AOT, we deliver comprehensive .NET Core development, maintenance, and outsourcing services to
-                        help your organization build scalable, secure, and high-performance applications. Whether you need
-                        custom development, ongoing support, or dedicated outsourcing teams, we have the expertise to accelerate
-                        your digital transformation.
-                    </p>
-
-                    <div class="d-flex flex-wrap gap-3 mb-4">
-                        <a href="#contact" class="btn btn-aot-solid">Free Consultation</a>
-                        <a href="#services" class="btn btn-aot-outline">Explore Services</a>
-                    </div>
-
-                    <!-- Stats Badges -->
-                    <div class="d-flex flex-wrap hero-stats" style="gap: 15px 30px;">
-                        <div class="stat-box">
-                            <div class="stat-number">30%</div>
-                            <div class="stat-label">Cost Reduction</div>
-                        </div>
-                        <div class="stat-box">
-                            <div class="stat-number">50%</div>
-                            <div class="stat-label">Speed Increase</div>
-                        </div>
-                        <div class="stat-box">
-                            <div class="stat-number">99.9%</div>
-                            <div class="stat-label">App SLA Uptime</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- 3. Why Choose Us Section -->
-    <section class="py-5 bg-aot-light-gray" id="why-us">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12 text-center section-header">
-                    <div class="text-uppercase text-aot-red fw-bold mb-2 font-heading"
-                        style="font-size: 13px; letter-spacing: 1.5px;">
-                        Certified Partner Solutions
-                    </div>
-                    <h2>Why Choose Us for .NET Core Services?</h2>
-                    <p>Our certified expertise and client-centric approach transform your digital operations into
-                        distinct competitive advantages.</p>
-                </div>
-            </div>
+  <!-- Success Toast Alert -->
+  <div class="toast-msg" id="toastMsg" role="alert" aria-live="assertive">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--success);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span>Thank you! Your request has been submitted successfully. Our .NET specialists will contact you soon.</span>
+  </div>
 
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-user-tie"></i>
-                        </div>
-                        <h3>Experienced Professionals</h3>
-                        <p>Certified developers with deep knowledge of .NET Core and modern development practices.</p>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-handshake-simple"></i>
-                        </div>
-                        <h3>Flexible Engagement Models</h3>
-                        <p>Choose from full-project development, dedicated teams, or support retainer models.</p>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-rotate"></i>
-                        </div>
-                        <h3>Agile Methodology</h3>
-                        <p>Rapid delivery cycles with continuous feedback for optimal results.</p>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-scale-balanced"></i>
-                        </div>
-                        <h3>Cost-Efficient Solutions</h3>
-                        <p>Reduce overheads by outsourcing your development needs to trusted specialists.</p>
-                    </div>
-                </div>
-                <!-- Card 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-cubes"></i>
-                        </div>
-                        <h3>End-to-End Support</h3>
-                        <p>From architecture design to deployment, maintenance, and ongoing updates.</p>
-                    </div>
-                </div>
-                <!-- Card 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <h3>Quality & Security</h3>
-                        <p>Adherence to best practices, coding standards, and compliance requirements.</p>
-                    </div>
-                </div>
-            </div>
+  <!-- Corporate Dark Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo-link">
+            <img src="images/nayifat_logo.png" alt="AOT Logo" class="footer-logo">
+          </a>
+          <p class="footer-tagline">
+            Advanced Operations Technology (AOT) — Your Trusted Partner in .NET Core Development, Support, and Outsourcing
+          </p>
         </div>
-    </section>
-
-    <!-- 4. Our Services Section -->
-    <section class="py-5" id="services">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12 text-center section-header">
-                    <div class="text-uppercase text-aot-red fw-bold mb-2 font-heading"
-                        style="font-size: 13px; letter-spacing: 1.5px;">
-                        Enterprise Capabilities
-                    </div>
-                    <h2>Our Services</h2>
-                    <p>Comprehensive .NET Core development, maintenance, and outsourcing capabilities tailored to your enterprise goals.</p>
-                </div>
-            </div>
-
-            <!-- Cards Grid (3 Columns) -->
-            <div class="row g-4 mb-5">
-                <!-- Column 1: Development -->
-                <div class="col-lg-4">
-                    <div class="service-card">
-                        <div class="service-card-icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <h3>.NET Core Development Services</h3>
-                        <p>We build highly scalable, modular web applications and cloud-ready architectures utilizing modern ASP.NET Core and C# best practices.</p>
-                        <ul class="service-item-list">
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Custom Web & Microservice Applications:</strong> Build scalable, high-performance web apps and microservices tailored to your needs.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>API & Backend Development:</strong> Create secure RESTful APIs for mobile apps, frontend interfaces, or third-party integrations.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Cloud-Native Solutions:</strong> Deploy on Azure, AWS, or GCP, optimized for modern containerized cloud environments.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Legacy System Migration:</strong> Migrate existing applications to .NET Core for improved performance and flexibility.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Third-Party Integrations:</strong> Connect your systems with ERP, CRM, payment gateways, and other enterprise solutions.</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Column 2: Support -->
-                <div class="col-lg-4">
-                    <div class="service-card">
-                        <div class="service-card-icon">
-                            <i class="fa-solid fa-wrench"></i>
-                        </div>
-                        <h3>Support & Maintenance Services</h3>
-                        <p>Keep your enterprise systems healthy, responsive, and secure. We offer proactive assessments and SLA-backed support to minimize downtime.</p>
-                        <ul class="service-item-list">
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Application Monitoring & Optimization:</strong> Continuous performance and security assessments.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Bug Fixes & Enhancements:</strong> Regular updates to keep your applications current and reliable.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Security & Compliance:</strong> Implement patches and best practices to ensure data safety and regulatory adherence.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Technical Support:</strong> 24/7 support services to minimize downtime and resolve critical issues.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Code Review & Refactoring:</strong> Enhance code quality for long-term maintainability.</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Column 3: Outsourcing -->
-                <div class="col-lg-4">
-                    <div class="service-card">
-                        <div class="service-card-icon">
-                            <i class="fa-solid fa-users-gear"></i>
-                        </div>
-                        <h3>.NET Core Outsourcing Services</h3>
-                        <p>Quickly inject certified .NET and C# expertise into your engineering department with flexible engagement models and rapid scaling.</p>
-                        <ul class="service-item-list">
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Dedicated Development Teams:</strong> Assemble specialized teams ready to work on your projects on a flexible basis.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Managed Projects:</strong> Full-cycle project management with transparent processes.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Offshore Development:</strong> Cost-effective solutions with high-quality deliverables.</div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <div><strong>Rapid Scaling:</strong> Quickly scale your development capacity based on project needs.</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Unified Dashboard & CTA Container (Dark Theme) -->
-            <div class="unified-dashboard-cta mt-5">
-                <div class="row align-items-center g-5 p-4 p-lg-5">
-                    <!-- Dashboard Image — second on mobile, first on desktop -->
-                    <div class="col-lg-6 order-2 order-lg-1">
-                        <img src="images/custom_solution.png" class="img-fluid rounded"
-                            alt="Software Development Team Dashboard and Agile Metrics">
-                    </div>
-                    <!-- CTA Box — first on mobile, second on desktop -->
-                    <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="pe-lg-4">
-                            <div class="text-uppercase text-aot-red fw-bold mb-2 font-heading"
-                                style="font-size: 13px; letter-spacing: 1.5px;">
-                                Tailored Integrations
-                            </div>
-                            <h3 class="text-white h2 mb-3">Looking for a custom solution?</h3>
-                            <p class="text-light opacity-75 mb-4" style="line-height: 1.7; font-size: 15px;">
-                                Our solutions architects are available to map out your specific system integrations,
-                                cloud migrations, database deployments, or custom developer resource requirements.
-                            </p>
-                            <div class="mt-4">
-                                <a href="#contact" class="btn btn-aot-solid px-4 py-3">Request Architecture Review</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-nav">
+          <div class="footer-column">
+            <h5>Navigation</h5>
+            <ul class="footer-links">
+              <li><a href="#why-us" class="footer-link">Why Choose Us</a></li>
+              <li><a href="#services" class="footer-link">Our Services</a></li>
+              <li><a href="#why-dotnet" class="footer-link">Why .NET Core</a></li>
+              <li><a href="#blogs" class="footer-link">Blog &amp; Insights</a></li>
+              <li><a href="#partner" class="footer-link">Partner with AOT</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Enterprise</h5>
+            <ul class="footer-links">
+              <li><a href="https://www.aot.sa/contact-us/" class="footer-link" target="_blank" rel="noopener">AOT Corporate Site</a></li>
+              <li><a href="#contact" class="footer-link">Request Consultation</a></li>
+            </ul>
+          </div>
         </div>
-    </section>
-
-    <!-- 5. Why .NET Core Section -->
-    <section class="why-dotnet-section bg-aot-light-gray" id="why-dotnet">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center section-header">
-                    <div class="text-uppercase text-aot-red fw-bold mb-2 font-heading"
-                        style="font-size: 13px; letter-spacing: 1.5px;">
-                        Technology Advantages
-                    </div>
-                    <h2>Why Choose .NET Core?</h2>
-                    <p>Designed by Microsoft as an open-source, highly modular framework, it serves as the ultimate
-                        engine for modern enterprise applications.</p>
-                </div>
-            </div>
-
-            <div class="row g-4 justify-content-center">
-                <!-- Tech 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="check-item">
-                        <div class="check-icon-box">
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
-                        <div class="check-content">
-                            <h4>Open-Source & Cross-Platform</h4>
-                            <p>Open-source, cross-platform framework suitable for diverse environments.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tech 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="check-item">
-                        <div class="check-icon-box">
-                            <i class="fa-solid fa-gauge-high"></i>
-                        </div>
-                        <div class="check-content">
-                            <h4>High Performance & Scale</h4>
-                            <p>High performance and scalability at enterprise levels.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tech 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="check-item">
-                        <div class="check-icon-box">
-                            <i class="fa-solid fa-cubes-stacked"></i>
-                        </div>
-                        <div class="check-content">
-                            <h4>Modular Architecture</h4>
-                            <p>Modular architecture supports flexible development.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tech 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="check-item">
-                        <div class="check-icon-box">
-                            <i class="fa-solid fa-cloud"></i>
-                        </div>
-                        <div class="check-content">
-                            <h4>Cloud & Third-Party Integration</h4>
-                            <p>Seamless integration with cloud platforms and third-party services.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tech 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="check-item">
-                        <div class="check-icon-box">
-                            <i class="fa-solid fa-users-viewfinder"></i>
-                        </div>
-                        <div class="check-content">
-                            <h4>Active Community Support</h4>
-                            <p>Active community support and continuous updates.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Advanced Operations Technology (AOT). All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#" class="footer-legal-link">Privacy Policy</a>
+          <a href="#" class="footer-legal-link">Terms of Service</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </footer>
 
-    <!-- 6. Our Process Section -->
-    <section class="py-5 process-section" id="process">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12 text-center section-header">
-                    <div class="text-uppercase text-aot-red fw-bold mb-2 font-heading"
-                        style="font-size: 13px; letter-spacing: 1.5px;">
-                        How We Work
-                    </div>
-                    <h2>Our Proven Development Process</h2>
-                    <p>We combine agile delivery structures with structured reviews to ensure zero friction and rapid
-                        time-to-value.</p>
-                </div>
-            </div>
-
-            <div class="row g-4 justify-content-center process-row">
-                <!-- Step 1 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 process-step">
-                    <div class="process-step-num">1</div>
-                    <div class="process-step-text">
-                        <h4>Connect</h4>
-                        <p>Align requirements and set project scopes.</p>
-                    </div>
-                </div>
-                <!-- Step 2 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 process-step">
-                    <div class="process-step-num">2</div>
-                    <div class="process-step-text">
-                        <h4>Discover</h4>
-                        <p>Conduct detailed process assessment.</p>
-                    </div>
-                </div>
-                <!-- Step 3 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 process-step">
-                    <div class="process-step-num">3</div>
-                    <div class="process-step-text">
-                        <h4>Analyze</h4>
-                        <p>Determine architecture and tech stacks.</p>
-                    </div>
-                </div>
-                <!-- Step 4 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 process-step">
-                    <div class="process-step-num">4</div>
-                    <div class="process-step-text">
-                        <h4>Develop</h4>
-                        <p>Write high-performance clean C# code.</p>
-                    </div>
-                </div>
-                <!-- Step 5 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 process-step">
-                    <div class="process-step-num">5</div>
-                    <div class="process-step-text">
-                        <h4>Optimize</h4>
-                        <p>Tune performance and perform security checks.</p>
-                    </div>
-                </div>
-                <!-- Step 6 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 process-step">
-                    <div class="process-step-num">6</div>
-                    <div class="process-step-text">
-                        <h4>Scale</h4>
-                        <p>Launch services and scale capability.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. Partner & Guarantee Section -->
-    <section class="partner-section">
-        <div class="container">
-            <div class="row align-items-center justify-content-between g-5">
-                <div class="col-lg-7 text-white">
-                    <div class="text-uppercase text-aot-red fw-bold mb-2 font-heading"
-                        style="font-size: 13px; letter-spacing: 1.5px;">
-                        Trusted Engineering Partner
-                    </div>
-                    <h2 class="text-white mb-2 h1 font-heading">Partner with AOT</h2>
-                    <h3 class="text-white opacity-90 h5 mb-3 fw-semibold">Your Trusted Partner in .NET Core Development, Support, and Outsourcing</h3>
-                    <p class="text-light opacity-75 mb-0" style="line-height: 1.7; font-size: 16px;">
-                        Leverage our expert team to develop resilient, modern, and future-proof .NET Core applications.
-                        Whether you’re building from scratch, maintaining existing solutions, or outsourcing development,
-                        we're committed to delivering excellence and driving your success.
-                    </p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="guarantee-card-premium">
-                        <div class="guarantee-icon-container">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <div class="badge-number">90 <span>Days</span></div>
-                        <div class="badge-text">To Measurable Results</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. Blogs & Latest Insights Section -->
-    <section class="py-5 bg-aot-light-gray" id="blog">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12 text-center section-header">
-                    <div class="text-uppercase text-aot-red fw-bold mb-2 font-heading"
-                        style="font-size: 13px; letter-spacing: 1.5px;">
-                        Latest Insights & Articles
-                    </div>
-                    <h2>Explore Our .NET Core Knowledge Base</h2>
-                    <p>Stay ahead with expert perspectives on .NET 8/9 architecture, enterprise cloud migration, high-throughput microservices, and agile outsourcing.</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- Blog Post 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <article class="blog-card">
-                        <div class="blog-card-img-wrap">
-                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
-                                alt="Migrating Enterprise .NET Monoliths to Microservices" class="blog-card-img" loading="lazy">
-                            <span class="blog-badge">Architecture</span>
-                        </div>
-                        <div class="blog-card-body">
-                            <div class="blog-meta">
-                                <span><i class="fa-regular fa-calendar me-1 text-aot-red"></i> Oct 12, 2026</span>
-                                <span><i class="fa-regular fa-clock me-1 text-aot-red"></i> 6 min read</span>
-                            </div>
-                            <h3 class="blog-card-title">
-                                <a href="#contact">Migrating Enterprise .NET Monoliths to .NET 8/9 Microservices</a>
-                            </h3>
-                            <p class="blog-card-excerpt">
-                                A comprehensive step-by-step roadmap for decomposing legacy ASP.NET systems into resilient, containerized microservices with zero operational downtime.
-                            </p>
-                            <div class="blog-card-footer">
-                                <a href="#contact" class="blog-read-more">
-                                    Read Full Article <i class="fa-solid fa-arrow-right-long ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Blog Post 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <article class="blog-card">
-                        <div class="blog-card-img-wrap">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
-                                alt="Maximizing ASP.NET Core API Throughput" class="blog-card-img" loading="lazy">
-                            <span class="blog-badge">Performance</span>
-                        </div>
-                        <div class="blog-card-body">
-                            <div class="blog-meta">
-                                <span><i class="fa-regular fa-calendar me-1 text-aot-red"></i> Sep 28, 2026</span>
-                                <span><i class="fa-regular fa-clock me-1 text-aot-red"></i> 5 min read</span>
-                            </div>
-                            <h3 class="blog-card-title">
-                                <a href="#contact">Maximizing Throughput: High-Performance C# & ASP.NET Core Tuning</a>
-                            </h3>
-                            <p class="blog-card-excerpt">
-                                How our architects achieved 50% latency reduction using Span&lt;T&gt;, memory pooling, async pipelines, and EF Core query execution optimizations.
-                            </p>
-                            <div class="blog-card-footer">
-                                <a href="#contact" class="blog-read-more">
-                                    Read Full Article <i class="fa-solid fa-arrow-right-long ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Blog Post 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <article class="blog-card">
-                        <div class="blog-card-img-wrap">
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-                                alt="Dedicated .NET Teams for Enterprise Outsourcing" class="blog-card-img" loading="lazy">
-                            <span class="blog-badge">Outsourcing</span>
-                        </div>
-                        <div class="blog-card-body">
-                            <div class="blog-meta">
-                                <span><i class="fa-regular fa-calendar me-1 text-aot-red"></i> Aug 19, 2026</span>
-                                <span><i class="fa-regular fa-clock me-1 text-aot-red"></i> 4 min read</span>
-                            </div>
-                            <h3 class="blog-card-title">
-                                <a href="#contact">Modernizing Outsourcing: How Dedicated .NET Pods Drive 30% Cost Savings</a>
-                            </h3>
-                            <p class="blog-card-excerpt">
-                                Strategic practices for integrating senior certified .NET developers into agile sprint workflows with transparent governance and structured code reviews.
-                            </p>
-                            <div class="blog-card-footer">
-                                <a href="#contact" class="blog-read-more">
-                                    Read Full Article <i class="fa-solid fa-arrow-right-long ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- Bottom CTA -->
-            <div class="text-center mt-5">
-                <a href="#contact" class="btn btn-aot-outline px-4 py-2">
-                    <i class="fa-solid fa-book-open me-2"></i>Explore All Technical Resources
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 9. Contact & Form Section -->
-    <section class="py-5" id="contact">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12 text-center section-header">
-                    <div class="text-uppercase text-aot-red fw-bold mb-2 font-heading"
-                        style="font-size: 13px; letter-spacing: 1.5px;">
-                        Get In Touch
-                    </div>
-                    <h2>Ready to Accelerate Your .NET Core Projects?</h2>
-                    <p>Contact us today for a free consultation. Our .NET solution leads will analyze your requirements and get back to you within 24 hours.</p>
-                </div>
-            </div>
-
-            <div class="row g-5">
-                <!-- Contact Form Column -->
-                <div class="col-lg-7">
-                    <div class="contact-form-card">
-                        <h3 class="mb-4">Schedule a Free Consultation</h3>
-                        <p class="text-muted mb-4">Fill out the consultation form below, and our .NET solution leads
-                            will get back to you within 24 hours.</p>
-
-                        <form action="#" method="POST">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="name" class="form-label">Full Name *</label>
-                                    <input type="text" class="form-control" id="name" required placeholder="John Doe">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="email" class="form-label">Work Email *</label>
-                                    <input type="email" class="form-control" id="email" required
-                                        placeholder="name@company.com">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="phone" class="form-label">Phone Number</label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="+966 50 000 0000">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="service" class="form-label">Service Focus *</label>
-                                    <select class="form-select" id="service" required>
-                                        <option value="" disabled selected>Select an option</option>
-                                        <option value="development">Custom Web & API Development</option>
-                                        <option value="migration">Legacy Application Migration</option>
-                                        <option value="support">Application Support & Retainers</option>
-                                        <option value="outsourcing">Dedicated Development Teams</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label for="message" class="form-label">Message *</label>
-                                    <textarea class="form-control" id="message" rows="4" required
-                                        placeholder="Describe your project, systems, timeline or developer requirements..."></textarea>
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <button type="submit" class="btn btn-aot-solid w-100 py-3">Submit Consultation
-                                        Request</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Contact Info Column -->
-                <div class="col-lg-5">
-                    <div class="ps-lg-4">
-                        <h3 class="mb-4">Contact Information</h3>
-                        <p class="text-muted mb-4">Reach out to us directly or request a call. We look forward to
-                            partnering with your engineering team.</p>
-
-                        <ul class="contact-info-list">
-                            <li>
-                                <div class="contact-info-icon">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div class="contact-info-text">
-                                    <h4>Email</h4>
-                                    <p><a href="mailto:marketing@aot.sa"
-                                            class="text-decoration-none text-aot-red fw-semibold">marketing@aot.sa</a>
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact-info-icon">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div class="contact-info-text">
-                                    <h4>Phone</h4>
-                                    <p><a href="tel:+966112910605" class="text-decoration-none text-dark">+966 11 291
-                                            0605</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact-info-icon">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div class="contact-info-text">
-                                    <h4>Location</h4>
-                                    <p>Riyadh, Kingdom of Saudi Arabia</p>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <div class="next-step-box mt-5">
-                            <h4 class="h5 mb-3"><i class="fa-solid fa-circle-nodes text-aot-red me-2"></i>What Happens
-                                Next?</h4>
-                            <ol class="small text-muted mb-0 ps-3">
-                                <li class="mb-2"><strong>Schedule Consultation:</strong> Book a free 30-minute discovery
-                                    call with our .NET architecture specialists.</li>
-                                <li class="mb-2"><strong>Process Assessment:</strong> We analyze your current
-                                    applications, code standards, and integration requirements.</li>
-                                <li><strong>Implementation Roadmap:</strong> Receive a tailored technical proposal,
-                                    roadmap, and pricing plan.</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 9. Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row g-4">
-                <!-- Branding Col -->
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="images/nayifat_logo.png" alt="AOT Logo" class="img-fluid mb-4" style="height: 45px;">
-                    <p class="pe-lg-4">Your trusted partner in enterprise software solutions, cloud services, and
-                        specialized .NET Core engineering support.</p>
-                    <div class="d-flex mt-4">
-                        <a href="#" class="footer-social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="footer-social-icon"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#" class="footer-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-
-                <!-- Solutions Col -->
-                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <h4>Solutions</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">EDARAH</a></li>
-                        <li><a href="#">Oracle ERP</a></li>
-                        <li><a href="#">Business Intelligence</a></li>
-                        <li><a href="#">Enterprise Content Management</a></li>
-                        <li><a href="#">Customer Relationship Management</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services Col -->
-                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Cloud Services</a></li>
-                        <li><a href="#">Network Services</a></li>
-                        <li><a href="#">IT Security Services</a></li>
-                        <li><a href="#">Database Services</a></li>
-                        <li><a href="#">Middleware Services</a></li>
-                        <li><a href="#">Application Support & Maintenance</a></li>
-                    </ul>
-                </div>
-
-                <!-- Supplies Col -->
-                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <h4>Technology Supplies</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">AOT Training Programs</a></li>
-                        <li><a href="#">Digital Display Solutions</a></li>
-                        <li><a href="#">Technology Supplies</a></li>
-                    </ul>
-                </div>
-
-                <!-- Company Link Col -->
-                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                    <h4>AOT</h4>
-                    <ul class="footer-links">
-                        <li><a href="#blog">Insights & Blog</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row footer-bottom">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-0">&copy; 2026 - AOT. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#"
-                                class="text-decoration-none text-muted small me-3">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-muted small">Terms of
-                                Service</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap 5 Bundle JS from CDN (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
+  <!-- Interactive JavaScript -->
+  <script src="js/main.js"></script>
 </body>
-
 </html>
